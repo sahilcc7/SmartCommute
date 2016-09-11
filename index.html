@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Sahil Chauhan">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>SmartCommute</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="alertify.js-0.3.11\themes\alertify.core.css" />
+    <link rel="stylesheet" href="alertify.js-0.3.11\themes\alertify.default.css" />
+    <link rel="stylesheet" href="countdown\jquery.countdown.css" />
+
+  </head>
+  <body> 
+
+   <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>SmartCommute</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+ 	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Find out whether you should bus or bike <br/>
+					to your destination.</h1>
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					    <input type="text" class="form-control" id="txtautocomplete" placeholder="Enter your destination"> 
+            <h1><span id="bikeBus"></span></h1>
+        
+					  </div>
+					 <!-- <button type="submit" class="btn btn-warning btn-lg">Go!</button> -->
+					</form>				
+          <br>
+            <label id="lblresult"></label>   	
+          <br>
+          <p>
+            <div id="weather"></div>
+            <label>Current Temp: <span id="temp"></span></label><br>
+            <label>Current Wind: <span id="wind"></span></label><br>
+            <label>Current Precipitation: <span id="precip"></span></label>           
+
+				</div><!-- /col-lg-6 -->
+				<div class="col-lg-6">
+          <br>
+          <br>
+          <br>
+					<span class="glyphicon glyphicon-road"></span>
+
+          
+				</div><!-- /col-lg-6 -->
+				<div id="countdown"></div>
+        <label id="note"></label>
+			</div><!-- /row -->
+		</div><!-- /container -->
+
+	</div><!-- /headerwrap -->
+	   
+
+<script src="alertify.js-0.3.11\lib\alertify.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfGp8iLAHK79faicV0vnYERQKtdAxxwsY&libraries=places"></script> 
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='countdown/jquery.countdown.js'></script>
+	<script src="index.js"></script>
+
+  <script>
+ 
+
+
+
+</script>
+ 
+  </body>
+</html>
