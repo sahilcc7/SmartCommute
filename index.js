@@ -49,6 +49,22 @@ function intilize() {
                 ts = (new Date()).getTime() + 24 * 60 * 60 * 1000; //counting 24 hours
                 newYear = false;
             }
+            $('#countdown').countdown({
+                timestamp: ts,
+                callback: function (days, hours, minutes, seconds) {
+                    var message = "";
+                    message += hours + " hour" + (hours == 1 ? '' : 's') + ", ";
+                    message += minutes + " minute" + (minutes == 1 ? '' : 's') + " and ";
+                    message += seconds + " second" + (seconds == 1 ? '' : 's') + " <br />";
+                    if (newYear) {
+                        message += "left until the new year!";
+                    }
+                    else {
+                        message += "left until this weather information is invalid!";
+                    }
+                    note.html(message);
+                }
+            });
         });
     });
 }
