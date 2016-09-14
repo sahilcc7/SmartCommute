@@ -73,14 +73,15 @@ google.maps.event.addDomListener(window, 'load', intilize);
         }
 
 $(function(){
-	var note = $('#note'),
-		ts = new Date(2012, 0, 1),
-		newYear = false;
+    var note = $('#note'),
+        ts = new Date(2012, 0, 1),
+        newYear = false,
+        now = new Date();
 
-	if((new Date()) > ts){
-		ts = (new Date()).getTime() + 24*60*60*1000; //counting 24 hours
-		newYear = false;
-	}
+    if(now > ts){
+        ts = new Date(now.getTime() + 24*60*60*1000);
+        newYear = false;
+    } 
 
 	$('#countdown').countdown({
 		timestamp	: ts,
